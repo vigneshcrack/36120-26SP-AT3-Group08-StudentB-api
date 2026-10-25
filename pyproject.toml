@@ -1,0 +1,39 @@
+[project]
+name = "at3-group08-studentb-api"
+version = "1.0.0"
+description = "Market Risk Index API (Group 08, Student B) - 36120 Advanced Machine Learning AT3"
+readme = "README.md"
+authors = [{ name = "Vignesh Selvam (25740287)" }]
+requires-python = "==3.12.13"
+dependencies = [
+    "fastapi[standard]==0.139.0",
+    "uvicorn==0.50.0",
+    "pandas==2.2.2",
+    "scikit-learn==1.6.1",
+    "lightgbm==4.6.0",
+    "joblib==1.5.3",
+    "httpx>=0.28",
+    "mykrml-25740287==0.3.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.2", "ruff"]
+
+# the shared feature package is published on TestPyPI; only that package comes from there
+[tool.uv.sources]
+mykrml-25740287 = { index = "testpypi" }
+
+[[tool.uv.index]]
+name = "testpypi"
+url = "https://test.pypi.org/simple/"
+explicit = true
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
