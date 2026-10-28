@@ -2,7 +2,8 @@
 
 **Subject:** 36120 Advanced Machine Learning Application, Spring 2026 (UTS) — AT3 Data Product with Machine Learning
 **Group:** 08 · **Student B:** Vignesh Selvam (25740287)
-**Live service:** _Render URL — add after deployment_ · interactive docs at `<URL>/docs`
+**Live service:** https://group08-studentb-mri-api.onrender.com · interactive docs at https://group08-studentb-mri-api.onrender.com/docs
+(free Render instance: the first request after inactivity can take ~50 s while it wakes up)
 
 | Group 08 member | Role | Student ID |
 |---|---|---|
@@ -73,7 +74,7 @@ Full experiment (EDA, feature ablation, Optuna, evaluation): group experiments r
 ### Examples
 
 ```bash
-curl -X POST <URL>/predict -H "Content-Type: application/json" \
+curl -X POST https://group08-studentb-mri-api.onrender.com/predict -H "Content-Type: application/json" \
      -d '{"token": "BTC", "forecast_horizon": 7}'
 ```
 ```json
@@ -98,7 +99,7 @@ curl -X POST <URL>/predict -H "Content-Type: application/json" \
 (values illustrative)
 
 ```bash
-curl -X POST <URL>/features -H "Content-Type: application/json" \
+curl -X POST https://group08-studentb-mri-api.onrender.com/features -H "Content-Type: application/json" \
      -d '{"token": "ETH", "forecast_horizon": 7, "history_days": 30}'
 ```
 
@@ -168,7 +169,7 @@ local fallbacks, Kraken being down, and all invalid-input cases.
    - **Health check path:** `/health`
 4. **Environment variables:** `PYTHON_VERSION=3.12.13`, `STUDENT_A_URL=<Student A Render URL>`,
    `STUDENT_C_URL=<Student C Render URL>`.
-5. **Create Web Service**; when the build finishes, open `<URL>/docs` and run `/predict`.
+5. **Create Web Service**; when the build finishes, open `https://group08-studentb-mri-api.onrender.com/docs` and run `/predict`.
 
 (Alternatively use the included `render.yaml`: New → Blueprint.)
 
