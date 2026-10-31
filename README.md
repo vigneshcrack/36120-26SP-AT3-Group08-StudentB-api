@@ -12,6 +12,7 @@
 |---|---|
 | **Live service** | https://group08-studentb-mri-api.onrender.com |
 | **Interactive docs (Swagger)** | https://group08-studentb-mri-api.onrender.com/docs |
+| **Group web app** | https://group08-crypto-intelligence.streamlit.app (Market Risk page) |
 | **Subject** | 36120 Advanced Machine Learning Application, Spring 2026, University of Technology Sydney (AT3: Data Product with Machine Learning) |
 | **Group / role** | Group 08, Student B: Market Risk Index (LightGBM regression) |
 | **Experiment notebook** | [`36120-26SP-AT3-Group08-experiments`](https://github.com/vigneshcrack/36120-26SP-AT3-Group08-experiments) → `notebooks/student_b/36120_26SP_AT3_08_25740287_experiment.ipynb` |
@@ -43,12 +44,12 @@
 
 ## 1. Group members
 
-| Role | Target (model) | Student name | Student ID |
+| Role | Target | Student name | Student ID |
 |---|---|---|---|
-| Student A | Asset Performance Index – API (XGBoost Regressor) | Ryan Cruikshank | 13191263 |
+| Student A | Asset Performance Index – API | Ryan Cruikshank | 13191263 |
 | **Student B** | **Market Risk Index – MRI (LightGBM Regressor) – this API** | **Vignesh Selvam** | **25740287** |
-| Student C | Trend Category – TC (XGBoost Classifier) | Nandeeswari Kumaravelu | 25980436 |
-| Student D | Trading Opportunity Rating – TOR (LightGBM Classifier) | Vinnie Bui | 26160438 |
+| Student C | Trend Category – TC | Nandeeswari Kumaravelu | 25980436 |
+| Student D | Trading Opportunity Rating – TOR | Vinnie Bui | 26160438 |
 
 ---
 
